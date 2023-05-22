@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Description" content="Grocery List" />
+    <title>Grocery List</title>
+  </head>
+  <body>
+    <h1>Grocery List</h1>
+    <script>
+      var groceryList = [];
+      function add_item(item) {
+        groceryList.push(item);
+      }
+
+      function remove_item(item) {
+        for (var i = 0; i <= groceryList.length; i++) {
+          if (groceryList[i] === item) groceryList.splice(i, 1);
+        }
+      }
+
+      function mark_item(item) {
+        groceryList.pop(item);
+      }
+
+      function view_list() {
+        for (var i = 0; i < groceryList.length; i++) {
+          if (groceryList.length == 0) return;
+          else console.log("-" + groceryList[i]);
+        }
+      }
+
+      view_list();
+      add_item("banana");
+      add_item("apple");
+      view_list();
+      add_item("testies");
+      view_list();
+      remove_item("testies");
+      view_list();
+      mark_item("apple");
+    </script>
+  </body>
+</html>

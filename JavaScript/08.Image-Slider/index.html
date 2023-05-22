@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Description" contant="Image - Slider" />
+    <title>Image - Slider</title>
+    <link rel="stylesheet" href="../10.Image-Slider/style.css" />
+    <link rel="stylesheet" href="./Bootstrap-5/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="main">
+      <div class="slider">
+        <img src="../10.Image-Slider/Images/images-01.jpg" alt="image" />
+        <div class="btn">
+          <button onclick="back()"><i class="fas fa-chevron-left"></i></button>
+          <button onclick="next()"><i class="fas fa-chevron-right"></i></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- JS -->
+    <script>
+      var mainimg = document.querySelector("img");
+      var images = [
+        "images-01.jpg",
+        "images-02.jpg",
+        "images-03.jpg",
+        "images-04.jpg",
+      ];
+
+      var num = 0;
+
+      function next() {
+        num++;
+        if (num >= images.length) {
+          num = 0;
+          mainimg.src = images[num];
+        } else {
+          mainimg.src = images[num];
+        }
+        img[(num = 1)].style.display = "block";
+      }
+
+      function back() {
+        num--;
+        if (num <= 0) {
+          num = images.length - 1;
+          mainimg.src = image[num];
+        } else {
+          mainimg.src = image[num];
+        }
+        img[(num = -1)].style.display = "block";
+      }
+    </script>
+  </body>
+</html>
