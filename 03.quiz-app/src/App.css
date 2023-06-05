@@ -1,0 +1,52 @@
+.App {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.question-wrapper {
+  border-radius: 3px solid gray;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+  padding: 16px;
+  border-radius: 16px;
+  color: black;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+ul {
+  list-style: none;
+}
+
+li {
+  margin-top: 8px;
+  background-color: rgb(243, 240, 240);
+  padding: 16px;
+  margin-left: 200px;
+  margin-right: 200px;
+  border: 3px solid white;
+  border-radius: 20px;
+  font-size: 20px;
+  cursor: pointer;
+}
+li:hover {
+  background-color: rgb(220, 211, 200);
+}
+.btn {
+  color: cornsilk;
+  background-color: brown;
+  border-radius: 10px;
+  border: 6px solid white;
+  font-size: 20px;
+  text-align: center;
+
+  cursor: pointer;
+}
+.prev {
+  color: cornsilk;
+  background-color: brown;
+  border-radius: 10px;
+  border: 6px solid white;
+  font-size: 20px;
+  text-align: left;
+  cursor: pointer;
+}
