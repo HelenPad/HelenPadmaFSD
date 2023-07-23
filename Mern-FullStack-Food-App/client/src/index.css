@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Playfair Display", serif;
+}
+.navbar-brand {
+  color: rgb(236, 26, 26) !important;
+}
+.logo {
+  height: 79px;
+  width: 79px;
+  border-radius: 50%;
+}
+.row {
+  background-color: white;
+}
+.menu-items {
+  display: flex;
+}
+.menu-items a {
+  text-decoration: none;
+  padding-left: 150px;
+}
+.nav-menu__name {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 1rem;
+  position: relative;
+  align-items: end;
+}
+.navbar-nav {
+  margin-left: auto;
+  color: gray !important;
+  font-weight: bold;
+}
+
+.menu-items {
+  display: flex;
+  padding: 20px;
+}
+.list {
+  width: 350px;
+  border: 1px solid rgb(250, 245, 245);
+  border-radius: 10px;
+  margin: auto;
+  background-color: white;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  padding-left: 20px;
+  padding-right: 15px;
+}
+h1 {
+  font-size: 20px !important;
+}
+h4 {
+  text-align: center;
+}
+
+.img-list {
+  margin-top: 10px;
+  height: 200px;
+  width: 310px;
+}
+.flex-container {
+  display: flex;
+  padding: 15px;
+}
+.flex-container h3 {
+  font-size: 18px;
+}
+.flex-container .btn {
+  margin-left: 15px;
+
+  border: 1px solid orange;
+  border-radius: 20px;
+  color: orange !important;
+  font-weight: bold !important;
+  cursor: pointer;
+  margin-left: 130px;
+}
+
+.flex-container .btn :hover {
+  cursor: pointer;
+  border: 1px solid orange;
+}
+
+.fa-plus {
+  color: green;
+  margin: 5px;
+}
+
+.fa-minus {
+  color: red;
+  margin: 5px;
+}
+
+.fa-trash {
+  color: red;
+}
+
+input{
+  margin-top: 10px !important;
+  box-shadow: none !important;
+}
