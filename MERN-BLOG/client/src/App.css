@@ -1,0 +1,23 @@
+*{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+h1{
+  color: grey;
+  text-align: center;
+ padding: 20px 0 0;
+}
+h1 span{
+  color: #ffa500;
+ 
+ 
+}
+.btn {
+  background: unset;
+  border: none;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-family: 'Roboto';
+  cursor: pointer;
+  opacity: 0.8;
+}
